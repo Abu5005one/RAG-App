@@ -40,7 +40,7 @@ qdrant = Qdrant.from_documents(
 model_name = "google/flan-t5-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-generator = pipeline("text2text-generation", model=model, tokenizer=tokenizer)  # ✅ Fixed typo
+generator = pipeline("text2text-generation", model=model, tokenizer=tokenizer)  
 llm = HuggingFacePipeline(pipeline=generator)
 
 
