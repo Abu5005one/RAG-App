@@ -14,4 +14,3 @@ Technologies Used
 - Qdrant (via Docker)
 - Streamlit
 
-- 
